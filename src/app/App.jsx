@@ -1,10 +1,10 @@
-import Todos from "../components/Todos";
+import CounterView from "../features/counter/CounterView";
 
 const App = () => {
 
 	return (
 		<div>
-			<Todos />
+			<CounterView />
 		</div>
 	);
 };
