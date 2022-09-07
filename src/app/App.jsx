@@ -1,10 +1,9 @@
-import Todos from "../components/Todos";
+import PostsView from "../features/posts/PostsView";
 
 const App = () => {
-
 	return (
 		<div>
-			<Todos />
+			<PostsView />
 		</div>
 	);
 };
