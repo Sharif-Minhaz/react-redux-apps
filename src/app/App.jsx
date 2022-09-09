@@ -1,9 +1,10 @@
-import PostsView from "../features/posts/PostsView";
+import "./App.css";
+import Routers from "../routes/Routers";
 
 const App = () => {
 	return (
 		<div>
-			<PostsView />
+			<Routers />
 		</div>
 	);
 };
