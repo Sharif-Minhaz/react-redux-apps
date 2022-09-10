@@ -1,8 +1,10 @@
-
 const Error = () => {
-  return (
-    <div>Error</div>
-  )
-}
+	return (
+		<div>
+			<h2>404 Page not found!</h2>
+			<hr />
+		</div>
+	);
+};
 
-export default Error
+export default Error;

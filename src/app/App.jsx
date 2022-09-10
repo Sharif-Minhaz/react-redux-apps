@@ -1,11 +1,15 @@
+import { BrowserRouter } from "react-router-dom";
+import Routers from "../routers/Routers";
+import PostView from "../services/post/PostView";
 import "./App.css";
-import Routers from "../routes/Routers";
+import Navbar from "../layouts/Navbar";
 
 const App = () => {
 	return (
-		<div>
+		<BrowserRouter>
+			<Navbar />
 			<Routers />
-		</div>
+		</BrowserRouter>
 	);
 };
 

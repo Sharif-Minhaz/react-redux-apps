@@ -1,10 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
-import booksReducer from "../features/books/booksSlice";
+import { setupListeners } from "@reduxjs/toolkit/query";
+import { postApi } from "../services/post/postSlice";
 
 const store = configureStore({
 	reducer: {
-		booksReducer: booksReducer,
+		[postApi.reducerPath]: postApi.reducer,
 	},
+	middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(postApi.middleware),
 });
+
+setupListeners(store.dispatch);
 
 export default store;
